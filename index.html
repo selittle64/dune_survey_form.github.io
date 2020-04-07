@@ -96,8 +96,50 @@
                 type="checkbox"
                 class="input-checkbox"
             />Chapterhouse: Dune</label>
-      
+        <div class="form-group">
+            <p id="radioLabel">Have you read any of the Brian Herbert/Kevin Anderson Dune Universe novels?</p>
+            <label>
+                <input
+                  name="Yes"
+                  value="yes"
+                  type="radio"
+                  class="input-radio"
+                />Yes</label
+              >
+              <label>
+                <input
+                  name="No"
+                  value="no"
+                  type="radio"
+                  class="input-radio"
+                />No</label>
           </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+        >If so, How Many?<span class="clue"></span></label>
+            <input
+        type="number"
+        name="other-novels"
+        id="number"
+        min="0"
+        max="99"
+        class="form-control"
+        placeholder="How many have you read?"
+      />
+      <div class="form-group">
+        <p id="radioLabel">Please feel free to provide any other info you would like below. For instance: favorite character, thoughts on the movie adaptations, etc.</p>
+        <textarea
+          id="info"
+          class="input-textarea"
+          name="info"
+          placeholder="Enter your info here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
     </form>
 </div>
 </div>
