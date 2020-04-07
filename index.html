@@ -1,7 +1,9 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <head>
     <link rel="stylesheet" href="C:\Users\scott\Documents\VSCODE Projects\dune_survey_form.github.io\main.css">
 </head>
+<div class="container">
 <body>
 <main id="main">
     <div>
@@ -24,18 +26,80 @@
         </div>
         <div>
             <div>
-                <label id="email-label" for="email">Email</label>
+                <label id="age-label" for="age">At what age did you first read DUNE?</label>
                 <input
-            type="email"
-            name="email"
-            id="email"
+            type="age"
+            name="age"
+            id="age"
             class="form-control"
-            placeholder="Enter your Email"
+            placeholder="Enter Age You Read Dune"
             required
                 />
         </div>
+        <div class="form-group">
+            <p id="radioLabel">Have you read any other books in the Dune series?</p>
+            <label>
+              <input
+                name="Yes"
+                value="yes"
+                type="radio"
+                class="input-radio"
+              />Yes</label
+            >
+            <label>
+              <input
+                name="No"
+                value="no"
+                type="radio"
+                class="input-radio"
+              />No</label
+            >
+      
+          </div>
+
+          <div class="form-group">
+            <p id="radioLabel">If so, which books have you read?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            <label>
+              <input
+                name="prefer"
+                value="dune-messiah"
+                type="checkbox"
+                class="input-checkbox"
+            />Dune Messiah</label>
+            <label>
+              <input
+              name="prefer"
+              value="children"
+              type="checkbox"
+              class="input-checkbox"
+            />Children of Dune</label>
+            <label>
+             <input
+             name="prefer"
+             value="god-emperor"
+             type="checkbox"
+             class="input-checkbox"
+            />God Emperor of Dune</label>
+            <label>
+                <input
+                name="prefer"
+                value="heretics"
+                type="checkbox"
+                class="input-checkbox"
+            />Heretics of Dune</label>
+            <label>
+                <input
+                name="prefer"
+                value="chapterhouse"
+                type="checkbox"
+                class="input-checkbox"
+            />Chapterhouse: Dune</label>
+      
+          </div>
     </form>
 </div>
-  
+</div>
 </main>
 </body>
